@@ -157,7 +157,7 @@ print(next_prompt)
 abot(next_prompt)
 
 # %%
-action_regex = re.compile('^Action: (\w+): (.*)$')   # python regular expression to selection action
+action_regex = re.compile(r'^Action: (\w+): (.*)$')   # python regular expression to selection action
 
 
 # %%
@@ -193,7 +193,7 @@ def query(question, max_turns=5):
 import re
 
 # Define the action regular expression
-action_regex = re.compile('^Action: (\w+): (.*)$')
+action_regex = re.compile(r'^Action: (\w+): (.*)$')
 
 def query(question, max_turns=5):
     i = 0
